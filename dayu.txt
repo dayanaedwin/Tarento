@@ -1,0 +1,9 @@
+name = input("Enter name: ")
+i=y
+ 
+filename = name+"_"+"notes.txt"
+while(i!=exit):
+	line = input("Enter single line: ")
+	with open(filename,"a") as appendfile:
+		appendfile.write(line\n)
+	y = print(Do yo want to repeat)
