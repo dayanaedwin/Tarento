@@ -1,0 +1,15 @@
+/*Write a program to record notes entered by a user. The program should do the following things:
+First asks the user’s name.
+Asks the user to enter a single-line note. After the user enters the note, it should get stored in USERNAME_notes.txt on a new line.
+The user will be asked to enter multiple notes in a loop till he/she types exit.*/
+i="y"
+while(i!="exit"):
+	name = input("Enter name: ")
+	
+ 
+	filename = name+"_"+"notes.txt"
+	line = input("Enter single line: ")
+	with open(filename,"a") as appendfile:
+		appendfile.write(line)
+		appendfile.write("\n")
+	i = input("Do yo want to repeat: (y/exit)")
